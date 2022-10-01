@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    main {
+      display: flex;
+      width: 100vw;
+      justify-content: space-evenly;
+      margin: 8rem 0;
+    }
+    div {
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    button {
+      padding: 1rem 2rem;
+      font: inherit;
+      border: 0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
+
 <body>
-    <script src="script.js"></script>
+  <h1>Rock Paper Scissors</h1>
+  <main>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </main>
+  <div style="opacity: 0%;">
+    <h2>Results:</h2>
+    <p>Your choice: <span id="playerChoice"></span></p>
+    <p>Computer choice: <span id="computerChoice"></span></p>
+    <p>Winner: <span id="winner"></span></p>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
